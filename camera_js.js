@@ -9,8 +9,8 @@ const
     frontCameraButton = document.querySelector("front-camera-button");
 
 function cameraStart(){
-    if (typeof currentSteam !== 'undefined'){
-        currentSteam.getTracks().forEach(track => {
+    if (typeof currentStream !== 'undefined'){
+        currentStream.getTracks().forEach(track => {
             track.stop();
         });
     }
