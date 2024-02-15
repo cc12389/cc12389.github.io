@@ -40,9 +40,10 @@ takePhotoButton.onclick = function(){
 
 frontCameraButton.onclick = function(){
     frontCamera = !frontCamera;
-    if(frontCamera){
+    if(frontCamera) {
         frontCameraButton.textContent = "Back Camera";
-    } else{
+    } 
+    else {
         frontCameraButton.textContent = "Front Camera";
     }
     cameraStart();
