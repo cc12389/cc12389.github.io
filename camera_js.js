@@ -27,7 +27,7 @@ function cameraStart(){
             console.error("Error happened.",error);
         });
 
-};
+}
 
 takePhotoButton.onclick = function(){
     cameraView.width = cameraDevice.videoWidth;
@@ -37,6 +37,7 @@ takePhotoButton.onclick = function(){
     photoDisplay.classList.add("photo-taken");
 
 };
+
 frontCameraButton.onclick = function(){
     frontCamera = !frontCamera;
     if(frontCamera){
@@ -45,7 +46,7 @@ frontCameraButton.onclick = function(){
         frontCameraButton.textContent = "Front Camera";
     }
     cameraStart();
-}
+};
 
 window.addEventListener("load", cameraStart);
 
