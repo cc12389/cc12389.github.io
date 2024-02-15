@@ -1,11 +1,11 @@
 var frontCamera = false;
-var currentSteam;
+var currentStream;
 
 const
     cameraView = document.querySelector("#camera-view"),
     cameraDevice = document.querySelector("#camera-device"),
     photoDisplay = document.querySelector("#photo-display"),
-    takePhotoButton = document.querySelector("#take-photo-button");
+    takePhotoButton = document.querySelector("#take-photo-button"),
     frontCameraButton = document.querySelector("front-camera-button");
 
 function cameraStart(){
