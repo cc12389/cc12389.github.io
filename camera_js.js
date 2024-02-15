@@ -20,7 +20,7 @@ function cameraStart(){
     navigator.mediaDevices
         .getUserMedia(constraints)
         .then(function(stream){
-            currentSteam = stream;
+            currentStream = stream;
             cameraDevice.srcObject = stream;
         })
         .catch(function(error){
